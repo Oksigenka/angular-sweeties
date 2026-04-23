@@ -1,0 +1,33 @@
+<div class="top_bar">
+  <a routerLink="/" class="top_bar__logo_link">
+    <img
+      src="assets/img/logo.svg"
+      alt="Nice & Gadgets"
+      class="top_bar__logo"
+    />
+  </a>
+
+  <div class="top_bar__right">
+    <app-nav-bar (close)="onMenuClose()"></app-nav-bar>
+
+    <div class="top_bar__actions">
+
+      <!-- <div class="theme_button" (click)="toggleTheme()">
+        <span role="img" aria-label="light moon">
+          🌕
+        </span>
+      </div> -->
+
+      <div class="iconButton">
+        <img src="assets/img/icons/Cart.svg" alt="Cart" />
+
+        <span *ngIf="cartCount > 0" class="badge">
+          {{ cartCount }}
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
