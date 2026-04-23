@@ -92,9 +92,9 @@
   // }
 
   &__logo {
-    width: 64px;
-    height: 22px;
-    margin: 13px 16px;
+    width: 160px;
+    height: 60px;
+    // margin: 13px 16px;
 
     // @include on-desktop {
     //   height: 28px;
@@ -107,8 +107,8 @@
 .icon {
   cursor: pointer;
 
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   border: 0;
 
   background-color: transparent;

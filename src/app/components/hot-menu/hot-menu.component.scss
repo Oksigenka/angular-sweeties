@@ -1,0 +1,135 @@
+.menu-section {
+  padding: 60px 20px;
+  background: #f7f4f1;
+  font-family: 'Segoe UI', sans-serif;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+
+    h2 {
+      font-size: 40px;
+      margin: 10px 0;
+      color: #3a2b23;
+    }
+
+    .subtitle {
+      color: #e57373;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+
+    .description {
+      max-width: 400px;
+      color: #777;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+
+    &_foto {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 16px;
+    }
+
+    .category {
+      color: #e57373;
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: #2d1f18;
+    }
+
+    .text {
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .price {
+      color: #ff6b4a;
+      font-weight: bold;
+    }
+
+    button {
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      padding: 6px 14px;
+      background: white;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        background: #ff6b4a;
+        color: white;
+        border-color: #ff6b4a;
+      }
+    }
+  }
+
+  .badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 500;
+    color: white;
+
+    &.pink { background: #f48fb1; }
+    &.orange { background: #ffb74d; }
+    &.blue { background: #4dd0e1; }
+    &.yellow { background: #ffd54f; color: #333; }
+  }
+
+  .center {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .view-all {
+    background: linear-gradient(90deg, #fb4b45, #ff9a5a);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+}
