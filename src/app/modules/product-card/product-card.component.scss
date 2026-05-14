@@ -1,0 +1,84 @@
+@import 'variables';
+
+.card {
+  background: $white-color;
+  border: 0.1px solid $white-border;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+
+  &__foto {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  &__content {
+    padding: 16px;
+  }
+
+  &__description {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    color: $text-color;
+    font-size: 13px;
+  }
+
+  &__text-h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: $brown-color;
+  }
+
+  &__text {
+    font-size: 13px;
+    color: $text-color;
+    margin-bottom: 15px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__price {
+      color: $red-gradient;
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    &__button {
+      background: linear-gradient(90deg, $red-gradient, $orange-gradient);
+      color: $white-color;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        background: linear-gradient(90deg, $orange-gradient, $red-gradient);
+      }
+    }
+  }
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  color: $white-color;
+
+  &.pink { background: #f48fb1; }
+  &.orange { background: #ffb74d; color: #333; }
+  &.blue { background: #4dd0e1; }
+  &.yellow { background: #ffd54f; color: #333; }
+}

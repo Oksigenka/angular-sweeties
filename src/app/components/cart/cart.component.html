@@ -1,0 +1,38 @@
+<div class="overlay" *ngIf="isOpen" (click)="toggle()"></div>
+
+<div class="cart" [class.open]="isOpen">
+  <div class="header">
+    <h3 class="header__title">My Cart</h3>
+    <div class="header__close" (click)="toggle()">✕</div>
+  </div>
+
+  <div class="items">
+    <div class="item" *ngFor="let item of cart.items">
+      <img [src]="item.image" class="item__foto" alt="" />
+
+      <div class="item__info">
+        <h4 class="item__name">{{item.name}}</h4>
+        <span class="item__price">${{item.price}}</span>
+
+        <div class="item__qty">
+          <button class="item__minus" (click)="cart.changeQty(item, -1)" [disabled]="item.quantity <= 1">-</button>
+          <span class="item__quantity">{{item.quantity}}</span>
+          <button class="item__plus" (click)="cart.changeQty(item, 1)" [disabled]="item.quantity >= item.stock">+</button>
+        </div>
+      </div>
+
+      <button class="item__remove" (click)="cart.remove(item)">✕</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer__total">
+      <span class="footer__name">Subtotal:</span>
+      <b class="footer__price">${{cart.total}}</b>
+    </div>
+
+    <a routerLink="/checkout" class="checkout" (click)="toggle()">
+      Proceed to Order →
+    </a>
+  </div>
+</div>

@@ -1,0 +1,87 @@
+<div class="container">
+  <nav class="breadcrumbs">
+    <a href="/" class="breadcrumbs__past">Home</a>
+    <span>&gt;</span>
+    <a href="/menu" class="breadcrumbs__past">Menu</a>
+    <span>&gt;</span>
+    <span class="breadcrumbs__current">{{ product.name }}</span>
+  </nav>
+
+  <div class="layout">
+    <!-- LEFT IMAGE -->
+    <div class="layout__image">
+      <span class="layout__badge {{product.badge_color}}">{{ product.badge }}</span>
+      <img [src]="product.image" [alt]="product.name" class="layout__img" />
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="content">
+      <p class="content__category">{{ product.category }}</p>
+
+      <h1 class="content__name">{{ product.name }}</h1>
+
+      <div class="price">
+        <span class="price__amount">${{ product.price }}</span>
+        <span class="price__weight">{{ product.weight }}</span>
+      </div>
+
+      <p class="description">
+        {{ product.description }}
+      </p>
+
+      <!-- INFO CARDS -->
+      <div class="info">
+        <div class="info__card">
+          <div class="info__text">
+            <img src="assets/user.png" alt="" class="info__foto" />
+            <p class="info__label">Serving size</p>
+          </div>
+          <p class="info__value">{{ product.serving }}</p>
+        </div>
+
+        <div class="info__card">
+          <div class="info__text">
+            <img src="assets/fire.png" alt="" class="info__foto" />
+            <p class="info__label">Calories</p>
+          </div>
+          <p class="info__value">{{ product.calories }}</p>
+        </div>
+      </div>
+
+      <!-- INGREDIENTS -->
+      <div class="block">
+        <div class="block__header">
+          <img src="assets/list.png" alt="" class="block__foto" />
+          <h3 class="block__h">Ingredients</h3>
+        </div>
+
+        <div class="tags">
+          <span *ngFor="let i of product.ingredients" class="tags__tag">
+            {{ i }}
+          </span>
+        </div>
+      </div>
+
+      <!-- ALLERGENS -->
+      <div class="block">
+        <div class="block__header">
+          <img src="assets/attention.png" alt="" class="block__foto" />
+          <h3 class="block__h">Allergens</h3>
+        </div>
+        <div class="tags">
+          <span *ngFor="let a of product.allergens" class="tags__tag danger">
+            {{ a }}
+          </span>
+        </div>
+      </div>
+
+      <div class="center">
+        <button class="add">
+          <img src="assets/white-basket.png" alt="" class="add__foto" />
+          <p class="add__p" (click)="add(product)">Add to Cart</p>
+        </button>
+        <button class="back" routerLink="/menu">Back to Menu</button>
+      </div>
+    </div>
+  </div>
+</div>

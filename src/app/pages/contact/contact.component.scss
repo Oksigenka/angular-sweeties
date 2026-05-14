@@ -1,0 +1,124 @@
+@import 'variables';
+
+.header {
+  margin-top: 63px;
+  padding: 40px 20px 40px;
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: $header-color;
+
+  &__h1 {
+    font-size: 58px;
+    margin: 20px 0 12px;
+    padding: 0px;
+    color: $brown-color;
+  }
+
+  &__subtitle {
+    color: $red-gradient;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+  }
+
+  &__description {
+    margin: 0px;
+    padding: 0px;
+    color: $text-color;
+  }
+}
+
+.contact {
+  background: $background-color ;
+  padding: 60px 0;
+
+  .container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  /* LEFT */
+  .info {
+    background: $red-gradient;
+    border: 0.1px solid #eb413b;
+    color: $white-color;
+    padding: 40px;
+    border-radius: 20px;
+    width: 440px;
+
+    &__h2 {
+      margin-bottom: 30px;
+    }
+
+    .item {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+
+      &__icon {
+        font-size: 20px;
+      }
+
+      &__caption {
+        font-size: 12px;
+        opacity: 0.8;
+      }
+
+      &__paragraph {
+        margin: 5px 0 0;
+      }
+    }
+  }
+
+  /* RIGHT */
+  .form {
+    background: $white-color;
+    border: 0.1px solid $white-border;
+    padding: 40px;
+    border-radius: 20px;
+    width: 500px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+
+    &__h2 {
+      margin-bottom: 5px;
+    }
+
+    &__sub {
+      color: $text-color;
+      margin-bottom: 20px;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    &__row {
+      display: flex;
+      gap: 10px;
+    }
+
+    &__input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      font-family: inherit;
+    }
+
+    &__button {
+      background: linear-gradient(90deg, $red-gradient, $orange-gradient);
+      color: $white-color;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background: linear-gradient(90deg, $orange-gradient, $red-gradient);
+      }
+    }
+  }
+}

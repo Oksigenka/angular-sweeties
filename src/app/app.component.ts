@@ -7,20 +7,13 @@ import { AboutAsComponent } from "./components/about-as/about-as.component";
 import { ReviewComponent } from "./components/review/review.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { TopBarComponent } from "./modules/top-bar/top-bar.component";
+import { CartComponent } from './components/cart/cart.component';
+import { HomeComponent } from "./components/home/home.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [
-    RouterOutlet,
-    HeaderComponent,
-    TopBarComponent,
-    HotMenuComponent,
-    InformaciaComponent,
-    AboutAsComponent,
-    ReviewComponent,
-    FooterComponent
-  ],
+  imports: [RouterOutlet, TopBarComponent, CartComponent, FooterComponent, HomeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

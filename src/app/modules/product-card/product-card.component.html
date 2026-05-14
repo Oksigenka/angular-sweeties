@@ -1,0 +1,15 @@
+<div class="card" (click)="goToProduct(item.id)">
+  <div class="badge {{item.badge_color}}" *ngIf="item.badge">{{item.badge}}</div>
+  <img [src]="item.image" alt="" class="card__foto" />
+
+  <div class="card__content">
+    <span class="card__category">{{item.category}}</span>
+    <h3 class="card__text-h3">{{item.name}}</h3>
+    <p class="card__description">{{item.description}}</p>
+
+    <div class="card__bottom">
+      <span class="card__bottom__price">${{item.price}}</span>
+      <button class="card__bottom__button" (click)="add(item)">Add to Cart</button>
+    </div>
+  </div>
+</div>

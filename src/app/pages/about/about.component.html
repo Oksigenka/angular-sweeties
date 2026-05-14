@@ -1,0 +1,74 @@
+<section class="header">
+  <span class="header__subtitle">— OUR STORY</span>
+  <h1 class="header__h1">Baked with Passion,<br>Served with Love</h1>
+  <!-- <p class="header__description">WDrop by,message below.</p> -->
+</section>
+
+<section class="about">
+  <!-- <div class="container"> -->
+    <!-- LEFT TEXT -->
+    <div class="about__container">
+      <p class="about__text">
+        Sweet Bliss was born in 2009 from a simple dream: to bring the warmth
+        of homemade baking to every celebration. What started as a small kitchen
+        operation has grown into a beloved local institution.
+      </p>
+
+      <p class="about__text">
+        Our founder, Elena Rossi, trained in Paris and Lyon before returning home
+        with a suitcase full of recipes and a heart full of inspiration.
+      </p>
+
+      <p class="about__text">
+        We source our ingredients locally whenever possible — seasonal fruits,
+        farm-fresh eggs, and single-origin chocolate.
+      </p>
+
+      <!-- STATS -->
+      <div class="about__stats">
+        <div class="about__stat">
+          <h2 class="about__h2">15+</h2>
+          <span class="about__span">Years of Baking</span>
+        </div>
+
+        <div class="about__stat">
+          <h2 class="about__h2">10k+</h2>
+          <span class="about__span">Happy Customers</span>
+        </div>
+
+        <div class="about__stat">
+          <h2 class="about__h2">50+</h2>
+          <span class="about__span">Awards Won</span>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+
+  <div class="image">
+    <img src="assets/cookie.jpg" alt="Our Bakery" class="image__foto">
+    <div class="est">
+      <span>Est.</span>
+      <h3>2009</h3>
+    </div>
+  </div>
+</section>
+
+
+<!-- TEAM -->
+<section class="team">
+  <div class="team__container">
+    <span class="team__label">— THE PEOPLE</span>
+    <h2 class="team__center">Meet Our Team</h2>
+
+    <div class="team__grid">
+      <div class="team__card" *ngFor="let member of team">
+
+        <img [src]="member.image" [alt]="member.name" class="team__img">
+
+        <h3 class="team__h3">{{ member.name }}</h3>
+        <p class="team__paragraph">{{ member.role }}</p>
+
+      </div>
+    </div>
+  </div>
+</section>

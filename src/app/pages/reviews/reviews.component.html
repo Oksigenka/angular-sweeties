@@ -1,0 +1,23 @@
+<section class="hero">
+  <p class="hero__subtitle">— OUR REVIEWS</p>
+  <h1 class="hero__h1">What Our Customers Say</h1>
+  <p class="hero__description">
+    Real stories from real sweet lovers. We are so grateful for every kind word.
+  </p>
+</section>
+
+<div class="menu_page">
+  <section class="menu_page__cards">
+    <div class="card" *ngFor="let item of items">
+      <p class="card__text">{{item.description}}</p>
+
+      <div class="card__user">
+        <img [src]="item.image" alt="" class="card__avatar" />
+        <div>
+          <h4 class="card__user__name">{{item.name}}</h4>
+          <span class="card__user__role">{{item.user}}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

@@ -12,13 +12,6 @@ import { RouterLink, RouterLinkActive, RouterModule } from "@angular/router";
 export class NavBarComponent {
  @Output() close = new EventEmitter<void>();
 
- links = [
-  {path: '/', label: 'Home', exact: true},
-  {path: '/menu', label: 'Menu'},
-  {path: '/about', label: 'About Us'},
-  {path: '/reviews', label: 'Reviews'},
- ];
-
  onClose() {
   this.close.emit();
  }

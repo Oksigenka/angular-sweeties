@@ -1,14 +1,14 @@
 <nav class="nav">
   <ul class="nav__list">
-    <li *ngFor="let link of links">
-      <a
-        [routerLink]="link.path"
-        routerLinkActive="active"
-        [routerLinkActiveOptions]="{ exact: link.exact || false }"
-        class="link"
-      >
-        {{ link.label }}
-      </a>
-    </li>
+
+    <li><a routerLink="/home" class="link">Home</a></li>
+
+    <li><a routerLink="/menu" class="link">Menu</a></li>
+
+    <li><a routerLink="/about" class="link">About Us</a></li>
+
+    <li><a routerLink="/contact" class="link">Contact</a></li>
+
+    <li><a routerLink="/reviews" class="link">Reviews</a></li>
   </ul>
 </nav>

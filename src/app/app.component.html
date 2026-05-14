@@ -1,22 +1,14 @@
 <main class="main">
-  <div class="content">
-    <app-top-bar></app-top-bar>
-    <app-header></app-header>
-    <app-hot-menu></app-hot-menu>
-    <app-about-as></app-about-as>
-    <app-informacia></app-informacia>
-    <app-review></app-review>
-    <app-footer></app-footer>
-  </div>
+  <!-- Always visible -->
+  <app-top-bar (openCart)="cartComponent.toggle()"></app-top-bar>
+  <app-cart #cartComponent></app-cart>
+
+  <!-- Changing pages -->
+  <section class="page-content">
+    <router-outlet></router-outlet>
+  </section>
+
+  <!-- Always visible -->
+  <app-footer></app-footer>
+
 </main>
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-
-<router-outlet />

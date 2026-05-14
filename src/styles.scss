@@ -1,7 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'variables';
+
 body {
   font-family: 'Spectral';
-  background-color: #FFF5E7;
+  background-color: $background-color;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }

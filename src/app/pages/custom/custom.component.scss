@@ -1,0 +1,46 @@
+.container {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.layout {
+  display: flex;
+  gap: 40px;
+}
+
+.options {
+  flex: 2;
+}
+
+.summary {
+  flex: 1;
+  background: #f7ebe5;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.card {
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card.active {
+  border: 2px solid #ff6b6b;
+}
+
+.preview {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

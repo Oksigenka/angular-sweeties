@@ -1,0 +1,72 @@
+<section class="header">
+  <span class="header__subtitle">— GET IN TOUCH</span>
+  <h1 class="header__h1">Visit Our Bakery</h1>
+  <p class="header__description">We'd love to hear from you. Drop by, call us, or send a message below.</p>
+</section>
+
+<section class="contact">
+  <div class="container">
+
+    <!-- LEFT INFO -->
+    <div class="info">
+      <h2 class="info__h2">Contact Information</h2>
+
+      <div class="item">
+        <div class="item__icon">📍</div>
+        <div>
+          <span class="item__caption">ADDRESS</span>
+          <p class="item__paragraph">24 Rue des Douceurs, Paris 75004, France</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__icon">📞</div>
+        <div>
+          <span class="item__caption">PHONE</span>
+          <p class="item__paragraph">+33 1 42 00 00 00</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__icon">✉️</div>
+        <div>
+          <span class="item__caption">EMAIL</span>
+          <p class="item__paragraph">hello&#64;sweetbliss.com</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__icon">⏰</div>
+        <div>
+          <span class="item__caption">HOURS</span>
+          <p class="item__paragraph">Mon–Sat: 8am – 7pm<br>Sunday: 9am – 5pm</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FORM -->
+    <div class="form">
+
+      <h2 class="form__h2">Send Us a Message</h2>
+      <p class="form__sub">We'll get back to you within 24 hours.</p>
+
+      <form [formGroup]="contactForm" (ngSubmit)="submit()" class="form__info">
+
+        <div class="form__row">
+          <input class="form__input" type="text" placeholder="Your name" formControlName="name">
+          <input class="form__input" type="email" placeholder="your@email.com" formControlName="email">
+        </div>
+
+        <input class="form__input" type="text" placeholder="+1 234 567 890" formControlName="phone">
+
+        <textarea class="form__input" rows="5" placeholder="Tell us about your order or question..." formControlName="message"></textarea>
+
+        <button type="submit" class="form__button">Send Message</button>
+
+      </form>
+
+    </div>
+
+  </div>
+</section>

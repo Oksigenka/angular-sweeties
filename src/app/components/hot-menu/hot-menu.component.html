@@ -1,99 +1,31 @@
-<section class="menu-section">
-  <div class="container">
+<section class="hot_menu">
+  <div class="hot_menu__container">
 
-    <div class="header">
+    <div class="hot_menu__header">
       <div>
-        <p class="subtitle">— OUR SPECIALTIES</p>
-        <h2>Sweet Temptations</h2>
+        <p class="hot_menu__header__subtitle">— OUR SPECIALTIES</p>
+        <h2 class="hot_menu__header__title">Sweet Temptations</h2>
       </div>
-      <p class="description">
-        Every item is baked fresh daily using locally sourced ingredients
-        and time-honored recipes passed down through generations.
-      </p>
+
+      <div>
+        <p class="hot_menu__header__description">
+          Every item is baked fresh daily using locally sourced ingredients
+          and time-honored recipes passed down through generations.
+        </p>
+
+        <div class="hot_menu__header__buttons">
+          <button class="hot_menu__header__button" (click)="prev()"><</button>
+          <button class="hot_menu__header__button" (click)="next()">></button>
+        </div>
+      </div>
     </div>
 
-    <div class="cards">
-
-      <!-- CARD 1 -->
-      <div class="card">
-        <span class="badge pink">Bestseller</span>
-        <img src="assets/cake.jpeg" alt="cake" class="card_foto">
-
-        <div class="card-content">
-          <p class="category">CAKES</p>
-          <h3>Strawberry Dream Cake</h3>
-          <p class="text">
-            Layers of vanilla sponge with fresh strawberry cream and glazed berries...
-          </p>
-
-          <div class="bottom">
-            <span class="price">$38.00</span>
-            <button>Order</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- CARD 2 -->
-      <div class="card">
-        <span class="badge orange">Popular</span>
-        <img src="assets/capcakes.webp" alt="lava" class="card_foto">
-
-        <div class="card-content">
-          <p class="category">CAKES</p>
-          <h3>Chocolate Lava Torte</h3>
-          <p class="text">
-            Rich dark chocolate cake with a warm molten center...
-          </p>
-
-          <div class="bottom">
-            <span class="price">$42.00</span>
-            <button>Order</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- CARD 3 -->
-      <div class="card">
-        <span class="badge blue">New</span>
-        <img src="assets/pastel-macarons.jpg" alt="macarons" class="card_foto">
-
-        <div class="card-content">
-          <p class="category">PASTRIES</p>
-          <h3>Vanilla Macarons Box</h3>
-          <p class="text">
-            Delicate French macarons with silky vanilla buttercream...
-          </p>
-
-          <div class="bottom">
-            <span class="price">$24.00</span>
-            <button>Order</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- CARD 4 -->
-      <div class="card">
-        <span class="badge yellow">Daily Fresh</span>
-        <img src="assets/croissants.jpg" alt="croissant" class="card_foto">
-
-        <div class="card-content">
-          <p class="category">PASTRIES</p>
-          <h3>Honey Almond Croissant</h3>
-          <p class="text">
-            Buttery, flaky croissant filled with almond cream...
-          </p>
-
-          <div class="bottom">
-            <span class="price">$6.50</span>
-            <button>Order</button>
-          </div>
-        </div>
-      </div>
-
+    <div class="hot_menu__cards">
+      <app-product-card *ngFor="let item of visibleItems" [item]="item"></app-product-card>
     </div>
 
     <div class="center">
-      <button class="view-all">View Full Menu →</button>
+      <button routerLink="/menu" class="view-all">View Full Menu →</button>
     </div>
 
   </div>

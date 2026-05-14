@@ -1,7 +1,8 @@
-  import { Component } from '@angular/core';
+  import { Component, EventEmitter, Output } from '@angular/core';
 import { NavBarComponent } from "../nav-bar/nav-bar.component";
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { CartService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-top-bar',
@@ -16,7 +17,9 @@ import { CommonModule } from '@angular/common';
 })
 
 export class TopBarComponent {
-  cartCount = 3;
+  @Output() openCart = new EventEmitter<void>();
+
+  constructor(public cart: CartService) {}
 
   onMenuClose() {
     console.log('Menu closed');

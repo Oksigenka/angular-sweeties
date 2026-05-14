@@ -1,0 +1,220 @@
+[
+  {
+    "id": 1,
+    "category": "CAKES",
+    "name": "Chocolate Lava Torte",
+    "price": 42,
+    "weight": "1.0 kg",
+    "description": "The Chocolate Lava Torte is our most indulgent creation. Made with premium 70% Belgian dark chocolate and European butter, this torte features a rich, fudgy center that stays molten at room temperature.",
+    "image": "assets/products/chocolate-cake.webp",
+    "serving": "6-8 slices",
+    "calories": "410 kcal / slice",
+    "badge": "Bestseller",
+    "badge_color": "pink",
+    "ingredients": [
+      "70% dark chocolate",
+      "European butter",
+      "Cane sugar",
+      "Cocoa powder",
+      "Free-range eggs",
+      "Organic flour"
+    ],
+    "allergens": ["Gluten", "Dairy", "Eggs"]
+  },
+  {
+    "id": 2,
+    "category": "CAKES",
+    "name": "Strawberry Dream Cake",
+    "price": 38,
+    "weight": "1.0 kg",
+    "description": "Layers of vanilla sponge with fresh strawberry cream and glazed berries...",
+    "image": "assets/products/strawberry-cake.jpg",
+    "serving": "6-8 slices",
+    "calories": "410 kcal / slice",
+    "badge": "Bestseller",
+    "badge_color": "pink",
+    "ingredients": [
+      "70% dark chocolate",
+      "European butter",
+      "Cane sugar",
+      "Cocoa powder",
+      "Free-range eggs",
+      "Organic flour"
+    ],
+    "allergens": ["Gluten", "Dairy", "Eggs"]
+  },
+  {
+    "id": 3,
+    "category": "CAKES",
+    "name": "Vanilla Dream Cake",
+    "price": 38,
+    "weight": "1.0 kg",
+    "description": "Layers of vanilla sponge with fresh vanilla cream and glazed berries...",
+    "image": "assets/products/vanilla-cake.jpeg",
+    "serving": "6-8 slices",
+    "calories": "410 kcal / slice",
+    "badge": "Bestseller",
+    "badge_color": "pink",
+    "ingredients": [
+      "70% dark chocolate",
+      "European butter",
+      "Cane sugar",
+      "Cocoa powder",
+      "Free-range eggs",
+      "Organic flour"
+    ],
+    "allergens": ["Gluten", "Dairy", "Eggs"]
+  },
+  {
+    "id": 4,
+    "category": "CAKES",
+    "name": "Pistachio Raspberry Cake",
+    "price": 38,
+    "weight": "1.0 kg",
+    "description": "Layers of vanilla sponge with fresh pistachio cream and glazed raspberries...",
+    "image": "assets/products/pistachio_raspberry_cake.jpg",
+    "serving": "6-8 slices",
+    "calories": "410 kcal / slice",
+    "badge": "Bestseller",
+    "badge_color": "pink",
+    "ingredients": [
+      "70% dark chocolate",
+      "European butter",
+      "Cane sugar",
+      "Cocoa powder",
+      "Free-range eggs",
+      "Organic flour"
+    ],
+    "allergens": ["Gluten", "Dairy", "Eggs"]
+  },
+  {
+    "id": 5,
+    "category": "CAKES",
+    "name": "Chocolate Capcakes",
+    "price": 42,
+    "image": "assets/products/capcakes.webp",
+    "badge": "Popular",
+    "badge_color": "blue",
+    "description": "Rich dark chocolate cake with a warm molten center...",
+    "weight": "1.0 kg",
+    "ingredients": [
+      "70% dark chocolate",
+      "European butter",
+      "Cane sugar",
+      "Cocoa powder",
+      "Free-range eggs",
+      "Organic flour"
+    ],
+    "allergens": ["Gluten", "Dairy", "Eggs"]
+  },
+  {
+    "id": 6,
+    "category": "PASTRIES",
+    "name": "Bubble-Gum Macarons Box",
+    "price": 24,
+    "weight": "1.0 kg",
+    "description": "Delicate French macarons with silky bubble-gum buttercream...",
+    "image": "assets/products/pastel-macarons.jpg",
+    "serving": "12 pieces",
+    "calories": "410 kcal / slice",
+    "badge": "New",
+    "badge_color": "yellow",
+    "ingredients": [
+      "70% dark chocolate",
+      "European butter",
+      "Cane sugar",
+      "Cocoa powder",
+      "Free-range eggs",
+      "Organic flour"
+    ],
+    "allergens": ["Gluten", "Dairy", "Eggs"]
+  },
+  {
+    "id": 7,
+    "category": "PASTRIES",
+    "name": "Honey Almond Croissant",
+    "price": 6.5,
+    "weight": "1.0 kg",
+    "description": "Buttery, flaky croissant filled with almond cream...",
+    "image": "assets/products/croissants.jpg",
+    "serving": "6-8 slices",
+    "calories": "410 kcal / slice",
+    "badge": "Daily Fresh",
+    "badge_color": "orange",
+    "ingredients": [
+      "70% dark chocolate",
+      "European butter",
+      "Cane sugar",
+      "Cocoa powder",
+      "Free-range eggs",
+      "Organic flour"
+    ],
+    "allergens": ["Gluten", "Dairy", "Eggs"]
+  },
+  {
+    "id": 8,
+    "category": "PASTRIES",
+    "name": "Bubble-Gum Macarons Box",
+    "price": 24,
+    "weight": "1.0 kg",
+    "description": "Delicate French macarons with silky bubble-gum buttercream...",
+    "image": "assets/products/pastel-macarons.jpg",
+    "serving": "12 pieces",
+    "calories": "410 kcal / slice",
+    "badge": "New",
+    "badge_color": "yellow",
+    "ingredients": [
+      "70% dark chocolate",
+      "European butter",
+      "Cane sugar",
+      "Cocoa powder",
+      "Free-range eggs",
+      "Organic flour"
+    ],
+    "allergens": ["Gluten", "Dairy", "Eggs"]
+  },
+  {
+    "id": 9,
+    "category": "PASTRIES",
+    "name": "Bubble-Gum Macarons Box",
+    "price": 24,
+    "weight": "1.0 kg",
+    "description": "Delicate French macarons with silky bubble-gum buttercream...",
+    "image": "assets/products/pastel-macarons.jpg",
+    "serving": "12 pieces",
+    "calories": "410 kcal / slice",
+    "badge": "New",
+    "badge_color": "yellow",
+    "ingredients": [
+      "70% dark chocolate",
+      "European butter",
+      "Cane sugar",
+      "Cocoa powder",
+      "Free-range eggs",
+      "Organic flour"
+    ],
+    "allergens": ["Gluten", "Dairy", "Eggs"]
+  },
+  {
+    "id": 10,
+    "category": "PASTRIES",
+    "name": "Bubble-Gum Macarons Box",
+    "price": 24,
+    "weight": "1.0 kg",
+    "description": "Delicate French macarons with silky bubble-gum buttercream...",
+    "image": "assets/products/pastel-macarons.jpg",
+    "serving": "12 pieces",
+    "calories": "410 kcal / slice",
+    "badge": "New",
+    "badge_color": "yellow",
+    "ingredients": [
+      "70% dark chocolate",
+      "European butter",
+      "Cane sugar",
+      "Cocoa powder",
+      "Free-range eggs",
+      "Organic flour"
+    ],
+    "allergens": ["Gluten", "Dairy", "Eggs"]
+  }
+]

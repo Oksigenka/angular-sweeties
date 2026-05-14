@@ -19,10 +19,12 @@
       </div> -->
 
       <div class="iconButton">
-        <img src="assets/bag.png" alt="Cart" class="icon"/>
+        <button class="cart__btn" (click)="openCart.emit()">
+          <img src="assets/gray-basket.png" alt="" class="add__foto" />
+        </button>
 
-        <span *ngIf="cartCount > 0" class="badge">
-          {{ cartCount }}
+        <span *ngIf="cart.items.length > 0" class="badge">
+          {{ cart.items.length }}
         </span>
       </div>
 

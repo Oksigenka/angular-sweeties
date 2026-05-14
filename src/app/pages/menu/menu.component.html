@@ -1,0 +1,40 @@
+<section class="header">
+  <p class="header__subtitle">— OUR MENU</p>
+  <h1 class="header__h1">Sweet Temptations</h1>
+  <p class="header__description">
+    Freshly baked every morning with the finest seasonal ingredients and a
+    whole lot of love.
+  </p>
+</section>
+
+<div class="menu_page">
+  <section class="filters">
+    <button class="filters__button" *ngFor="let cat of categories"
+      [class.active]="cat === activeCategory"
+      (click)="setCategory(cat)"
+    >
+      {{cat}}
+    </button>
+  </section>
+
+  <section class="menu_page__cards">
+    <app-product-card *ngFor="let item of filteredItems" [item]="item"></app-product-card>
+  </section>
+
+  <section class="castom">
+    <div class="castom__left">
+      <h2 class="castom_title">Can't decide? Create your own cake!</h2>
+      <p class="castom__text">
+        Choose from our selection of flavors and sizes to create a custom cake
+        that's uniquely yours.
+      </p>
+
+      <button class="castom__button">Start Customizing</button>
+    </div>
+
+    <div class="image">
+      <img src="assets/products/chef.png" alt="Our Bakery" class="castom__foto">
+    </div>
+  </section>
+</div>
+

@@ -1,0 +1,76 @@
+<div class="container">
+  <h1>Build Your Own Cake</h1>
+  <p class="subtitle">
+    Design your dream cake from scratch
+  </p>
+
+  <div class="layout">
+    <!-- LEFT -->
+    <div class="options">
+
+      <!-- FLAVOR -->
+      <div class="section">
+        <h2>Cake Flavor</h2>
+
+        <div class="grid">
+          <div
+            *ngFor="let f of flavors"
+            class="card"
+            [class.active]="f === selectedFlavor"
+            (click)="selectFlavor(f)"
+          >
+            <img [src]="f.image" />
+            <h3>{{ f.name }}</h3>
+            <p>{{ f.description }}</p>
+            <span *ngIf="f.price > 0">+${{ f.price }}</span>
+            <span *ngIf="f.price === 0">Included</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SIZE -->
+      <div class="section">
+        <h2>Cake Size</h2>
+
+        <div class="grid">
+          <div
+            *ngFor="let s of sizes"
+            class="card"
+            [class.active]="s === selectedSize"
+            (click)="selectSize(s)"
+          >
+            <h3>{{ s.name }}</h3>
+            <p>{{ s.description }}</p>
+            <span *ngIf="s.price > 0">+${{ s.price }}</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="summary">
+      <h2>Your Creation</h2>
+
+      <div class="preview">
+        <ng-container *ngIf="selectedFlavor; else empty">
+          <img [src]="selectedFlavor.image" />
+          <p>{{ selectedFlavor.name }}</p>
+        </ng-container>
+
+        <ng-template #empty>
+          <p>Select a flavor to preview</p>
+        </ng-template>
+      </div>
+
+      <div class="price">
+        <p>Base Price: ${{ basePrice }}</p>
+        <h3>Total: ${{ total }}</h3>
+      </div>
+
+      <button [disabled]="!isValid">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
