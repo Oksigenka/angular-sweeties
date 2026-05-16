@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --base-href='https://oksigenka.github.io/angular-sweeties/' && npx angular-cli-ghpages --dir=dist/angular-sweeties"
+    "deploy": "ng build --base-href=\"https://oksigenka.github.io/angular-sweeties/\" && npx angular-cli-ghpages --dir=dist/angular-sweeties/browser"
   },
   "private": true,
   "dependencies": {
