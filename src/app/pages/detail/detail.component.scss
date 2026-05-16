@@ -95,7 +95,6 @@
   line-height: 1.6;
 }
 
-/* INFO */
 .info {
   display: flex;
   gap: 20px;
@@ -129,7 +128,6 @@
   }
 }
 
-/* TAGS */
 .block {
   margin-top: 20px;
 
@@ -165,15 +163,15 @@
 
 .center {
   display: flex;
-  justify-content: center;   // по центру
+  justify-content: center;
   align-items: center;
-  gap: 16px;                 // відстань між кнопками
+  gap: 16px;
   margin-top: 40px;
 }
 
 .add {
   display: flex;
-  align-items: center;   // 🔥 це важливо
+  align-items: center;
   gap: 18px;
 
   background: linear-gradient(90deg, $red-gradient, $orange-gradient);
