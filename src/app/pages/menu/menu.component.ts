@@ -34,4 +34,8 @@ export class MenuComponent implements OnInit {
   setCategory(cat: string) {
     this.activeCategory = cat;
   }
+
+  goToCustom() {
+    this.router.navigate(['/menu', 'custom']);
+  }
 }

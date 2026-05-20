@@ -1,6 +1,9 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 
 interface Option {
+  id: number;
   name: string;
   description: string;
   price: number;
@@ -10,7 +13,7 @@ interface Option {
 @Component({
   selector: 'app-custom',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './custom.component.html',
   styleUrl: './custom.component.scss'
 })
@@ -21,18 +24,21 @@ export class CustomComponent {
   // 🔹 FLAVORS
   flavors: Option[] = [
     {
+      id: 1,
       name: 'Classic Vanilla',
       description: 'Light, airy vanilla sponge',
       price: 0,
       image: 'https://via.placeholder.com/150',
     },
     {
+      id: 2,
       name: 'Rich Chocolate',
       description: 'Dark chocolate base',
       price: 3,
       image: 'https://via.placeholder.com/150',
     },
     {
+      id: 3,
       name: 'Red Velvet',
       description: 'Velvety cocoa sponge',
       price: 3,
@@ -42,9 +48,9 @@ export class CustomComponent {
 
   // 🔹 SIZES
   sizes: Option[] = [
-    { name: 'Small', description: '6 inch', price: 0, image: '' },
-    { name: 'Medium', description: '8 inch', price: 5, image: '' },
-    { name: 'Large', description: '10 inch', price: 10, image: '' },
+    { id: 1, name: 'Small', description: '6 inch', price: 0, image: '' },
+    { id: 2, name: 'Medium', description: '8 inch', price: 5, image: '' },
+    { id: 3, name: 'Large', description: '10 inch', price: 10, image: '' },
   ];
 
   selectedFlavor?: Option;

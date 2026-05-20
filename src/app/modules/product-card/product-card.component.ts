@@ -22,10 +22,18 @@ export class ProductCardComponent {
     this.router.navigate(['/menu', 'product', id]);
   }
 
-  add(item: any) {
-    this.cart.addToCart({
-      ...item,
-      quantity: 1
-    });
+  addToCard(event: Event, item: any) {
+    event.stopPropagation();
+
+    if (!this.isInCart(item.id)) {
+      this.cart.addToCart({
+        ...item,
+        quantity: 1
+      });
+    }
+  }
+
+  isInCart(id: number): boolean {
+    return this.cart.items.some(item => item.id === id);
   }
 }
